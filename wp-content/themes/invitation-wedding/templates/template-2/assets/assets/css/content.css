@@ -1,0 +1,553 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Poppins";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section{
+  overflow-x: hidden;
+}
+.chevron-down{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  bottom: 15vh;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  fill: #fff;
+  animation: up-down-chevron 2s infinite;
+}
+.btn-insta{
+  width: 150px;
+  margin: 2rem auto;
+}
+.btn-sound{
+  width: 100%;
+  padding: 0;
+  height: 100%;
+}
+#menu{
+  transition: bottom 0.3s;
+}
+.d-between{
+  display: flex;
+  justify-content: space-between;
+}
+.cRounded{
+  border-radius: 2rem;
+}
+.menu {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: #38225b;
+  border-radius: 30px;
+  height: 60px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.menu .icon {
+  padding: 0 10px;
+}
+.menu .icon img {
+  width: 50px;
+  height: 50px;
+}
+.full-height{
+  height: 100vh;
+}
+.bg-top {
+  background-image: url("../img/background-2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  animation: cakra 5s infinite;
+  position: fixed;
+  z-index: 9999999;
+  display: block;
+  bottom: -150px;
+  left: -150px;
+  width: 400px;
+  height: 400px;
+}
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.banner-opacity {
+  background-color: #000000a1;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+.banner .svg-banner {
+  bottom: 0;
+  transform: scale(-1);
+  position: absolute;
+  color: transparent;
+}
+.banner svg .shape-fill {
+  fill: #402c5d;
+}
+.couple {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+  color: #fff;
+}
+.couple h1 {
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+.couple h2 {
+  font-family: "Playfair Display";
+  font-size: 63px;
+}
+
+.getting-married .card-getting-married,
+.doa-pernikahan,
+.gallery .row{
+  width: 80%;
+}
+
+
+.getting-married {
+  background-image: url("../img/background-property.svg");
+}
+.getting-married .card-getting-married {
+  margin: auto;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  background-color: #38225b;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+.getting-married h4,
+.getting-married p,
+.getting-married .title {
+  font-family: "Playfair Display", Sans-serif;
+}
+.getting-married .title {
+  width: 60%;
+  margin: auto;
+}
+.getting-married .title h2 {
+  font-size: 42px;
+  margin: 20px 0;
+}
+.getting-married .title p {
+  font-weight: normal;
+  font-size: 14px;
+  margin: 40px 0;
+}
+.getting-married .profile-wrap {
+  padding: 0 20px;
+}
+.getting-married .logo {
+  width: 100vw;
+  margin: 1rem 0;
+}
+.getting-married .profile {
+  position: relative;
+}
+.getting-married .profile .profile-img {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: auto;
+  border: 5px solid #f4bf5d;
+}
+.getting-married h4 {
+  margin: 15px 0;
+}
+.getting-married .name {
+  font-family: "Great Vibes", Sans-serif;
+  font-size: 36px;
+  margin: 10px 0;
+  color: #f4bf5d;
+  text-shadow: 0px 13px 10px rgb(0 0 0 / 66%);
+}
+.getting-married .profile .profile-img img {
+  width: 100%;
+  height: auto;
+}
+.getting-married .profile .flowers-1 {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  transform: rotate(345deg);
+  height: 120px;
+}
+.getting-married .profile .flowers-2 {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  transform: rotate(10deg) scaleX(-1);
+  height: 120px;
+}
+.doa-pernikahan {
+  margin: auto;
+  padding: 10rem 0;
+  font-family: "Playfair Display", Sans-serif;
+}
+.doa-pernikahan .doa {
+  color: #fff;
+  padding-left: 3rem;
+}
+.doa-pernikahan .doa h3 {
+  font-size: 62px;
+  margin: 3rem 0;
+}
+.doa-pernikahan .doa h4 {
+  font-size: 24px;
+  text-align: center;
+  margin: 3rem 0;
+}
+.doa-pernikahan .video {
+  padding: 15px;
+  background-color: #38225b;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+.doa-pernikahan .video iframe,.doa-pernikahan .video img {
+  width: 100%;
+  height: 300px;
+}
+.doa-pernikahan .video img{
+  object-fit: cover;
+  height: auto;
+}
+.counter .counter-list{
+  align-items: center;
+}
+.counter .counter-list .counter-head{
+  font-size: 36px;
+}
+.akad-nikah{
+  font-family: "Playfair Display", Sans-serif;
+}
+.akad-nikah .row{
+  justify-content: center;
+  padding: 3rem 0;
+}
+.akad-nikah h2{
+  font-size: 62px;
+}
+.akad-nikah p{
+  font-size: 24px;
+}
+.akad-nikah .time{
+  font-family: "Poppins";
+}
+.akad-nikah h2, .akad-nikah h3,.akad-nikah p{
+  color: #fff;
+}
+.akad-nikah .images{
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+.akad-nikah .images img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.akad-nikah svg{
+  fill: #fff;
+  width: 60px;
+  height: 60px;
+}
+.akad-nikah .save-date{
+  letter-spacing: 3px;
+}
+.prokes{
+  background-color: #464646;
+  color: #fff;
+  font-family: "Playfair Display", Sans-serif;
+}
+.prokes .wrap{
+  align-content: center;
+}
+.prokes img{
+  width: 500px;
+  object-fit: cover;
+}
+.prokes h2{
+  font-size: 62px;
+}
+.prokes p{
+  font-size: 14px;
+  width: 90%;
+  padding: 3rem 0;
+  padding-right: 1rem;
+}
+.gallery{
+  background-image: url("../img/background-property.svg");
+  text-align: center;
+  color: #fff;
+  padding: 5rem 1rem;
+  font-family: "Playfair Display", Sans-serif;
+}
+.gallery h2{
+  font-size: 62px;
+}
+.gallery h3{
+  font-size: 24px;
+}
+.gallery p{
+  font-size: 14px;
+  width: 50%;
+  margin: auto;
+}
+.gallery .img-fluid{
+  width: 100%;
+  object-fit: cover;
+  margin: 3rem 0;
+}
+.gallery .img-1{
+  height: 300px;
+}
+.gallery .img-2{
+  height: 550px;
+}
+.gallery .row{
+  margin: auto;
+}
+.kartu-ucapan{
+  margin: auto;
+  height: 100vh;
+  padding: 3rem 2rem;
+  background-color: #000000b3;
+  font-family: "Playfair Display";
+  overflow: hidden;
+}
+.kartu-ucapan h2{
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  margin: 0;
+}
+.kartu-ucapan img{
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+.chat{
+  height: 300px;
+  margin: 2rem 0;
+  overflow: auto;
+}
+.guestbook {
+  flex: 1;
+  display: block;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 15%);
+  margin-left: 15px;
+  min-height: 60px;
+  position: relative;
+  padding: 8px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.guestbook:after, .guestbook:before {
+  border-width: 10px 10px 10px 0;
+  border-style: solid;
+  border-color: transparent #fcfcfc;
+  content: "";
+  left: -7px;
+  position: absolute;
+  top: 9px;
+}
+.guestbook-name {
+  font-size: 12px;
+  color: #acb4c2;
+  text-decoration: none !important;
+  -webkit-transition: 300ms color;
+  -moz-transition: 300ms color;
+  -ms-transition: 300ms color;
+  -o-transition: 300ms color;
+  transition: 300ms color;
+}
+.user-guestbook {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.user-guestbook img {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+  height: 40px;
+  right: 10px;
+  overflow: hidden;
+  top: 0;
+  width: 40px;
+}
+.virtual{
+  background-color: #464646;
+  padding: 5rem 0;
+}
+.virtual .pundi-digital{
+  padding: 3rem;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.virtual .pundi-digital img{
+  width: auto;
+  height: 500px;
+}
+.virtual .pundi-digital h2{
+  font-size: 36px;
+}
+.virtual .pundi-digital p{
+  font-size: 14px;
+}
+.bgsound-box{
+  position: fixed;
+  right: 10px;
+  width: 60px;
+  background-color: #fff;
+  height: 60px;
+  z-index: 999;
+  padding: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: -1px 1px 2px #000000c7;
+}
+footer{
+  width: 100%;
+  height: 150px;
+  background-color: #464646;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+footer span{
+  color: #fff;
+  font-size: 14px;
+}
+@media screen and (max-width: 1024px) {
+  .getting-married .card-getting-married,
+  .doa-pernikahan,
+  .gallery .row{
+    width: 95%;
+  }
+  section {
+    height: auto;
+  }
+  .banner {
+    background-position: 50%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .couple h1{
+    font-size: 14px;
+  }
+  .couple h2{
+    font-size: 36px;
+    width: 250px;
+  }
+  .bg-backdrop{
+    background-position: 20% 20%;
+  }
+  .bg-top{
+    display: none;
+  }
+  .getting-married .title {
+    width: 100%;
+  }
+  .getting-married .title h2{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .doa-pernikahan .doa {
+    padding: 5rem;
+    text-align: center;
+  }
+  .doa-pernikahan .doa h3 {
+    font-size: 24px;
+  }
+  .akad-nikah .row{
+    height:auto;
+    padding: 3rem 2rem;
+  }
+  .akad-nikah h2{
+    font-size: 36px;
+  }
+  .akad-nikah .images{
+    height: 400px;
+  }
+  .akad-nikah h3 {
+    font-size: 24px;
+  }
+  .akad-nikah p{
+    font-size: 18px;
+    margin: 0;
+  }
+  .akad-nikah svg{
+    width: 30px;
+    height: 30px;
+  }
+  .prokes{
+    padding: 3rem 1rem;
+  }
+  .prokes h2{
+    font-size: 24px;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+  .prokes .content{
+    margin: 3rem;
+    text-align: center;
+  }
+  .prokes p{
+    width: auto;
+    padding: 0;
+  }
+  .full-height{
+    height: auto;
+  }
+  .gallery .img-fluid{
+    margin: 1rem 0;
+  }
+  .gallery .center-wrap{
+    height: 180px;
+  }
+  .gallery .center-wrap .img-1,.gallery .center-wrap .img-2,
+  .gallery .footer-wrap .img-1,.gallery .footer-wrap .img-2{
+    width: 45%;
+    height: auto;
+  }
+  .kartu-ucapan{
+    height: auto;
+  }
+  .kartu-ucapan img{
+    height: 100%;
+  }
+  .virtual .pundi-digital{
+    padding: 0;
+    width: 85%;
+  }
+  .virtual .pundi-digital h2{
+    padding: 2rem 3rem;
+    font-size: 24px;
+  }
+  .virtual .pundi-digital p{
+    padding: 0 3rem;
+  }
+  .virtual .pundi-digital img{
+    width: 100%;
+    height: auto;
+  }
+}

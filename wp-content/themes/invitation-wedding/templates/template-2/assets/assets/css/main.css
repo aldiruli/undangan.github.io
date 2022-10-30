@@ -1,0 +1,202 @@
+.bg {
+  background-image: url("../img/background-property.svg");
+  font-family: "Poppins";
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+p {
+  margin: 0;
+}
+.tamu {
+  font-size: 24px;
+  font-weight: bold;
+}
+.box-shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.open-invitation {
+  background-image: url("../img/background-opacity.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 770px 80%;
+  z-index: 999999;
+}
+.bg-top {
+  background-image: url("../img/background-2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  animation: cakra 5s infinite;
+}
+.bg-top {
+  height: 250px;
+}
+.card-name {
+  width: 350px;
+  height: 150px;
+  margin: 30px auto;
+  background-color: #38225b;
+  color: #f4bf5d;
+  border-radius: 15px;
+  justify-content: space-around;
+}
+.vector {
+  z-index: -1;
+}
+.flowers-1,
+.flowers-2,
+.wayang,
+.gunungan,
+.gunungan-2,
+.cloud,
+.cloud-2,
+.cloud-3,
+.cloud-4 {
+  position: absolute;
+}
+.flowers-1 {
+  left: -20px;
+  bottom: -20px;
+}
+.flowers-2 {
+  right: -20px;
+  top: -20px;
+  transform: scaleY(-1) scaleX(-1);
+}
+.btn-open-invitation {
+  border-radius: 30px;
+  justify-content: center;
+  border: none;
+  width: 200px;
+  padding: 10px 15px;
+  margin: 30px auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  background-color: #e3d3b2;
+  animation: btn-open-invitation 4s infinite;
+}
+.wayang {
+  z-index: 2;
+  right: 0;
+  width: 30vw;
+  bottom: 0;
+  transform: translateY(-3vh);
+  animation: wayang 5s infinite;
+}
+.wayang svg {
+  width: 100%;
+}
+.gunungan {
+  bottom: 130px;
+  left: 0px;
+  transform: rotate(10deg);
+  width: 20vw;
+  animation: gunungan 3s infinite;
+}
+.gunungan-2 {
+  bottom: 60px;
+  left: 90px;
+  transform: rotate(20deg);
+  width: 20vw;
+  animation: gunungan-2 3s infinite;
+}
+.gunungan svg,
+.gunungan-2 svg {
+  width: 100%;
+}
+.cloud {
+  z-index: 5;
+  height: 55vh;
+}
+.cloud-2 {
+  z-index: 4;
+  height: 60vh;
+}
+.cloud-3 {
+  z-index: 3;
+  height: 55vh;
+}
+.cloud-4 {
+  z-index: 1;
+  height: 60vh;
+}
+.cloud,
+.cloud-2,
+.cloud-3,
+.cloud-4 {
+  bottom: 0;
+}
+.cloud svg,
+.cloud-2 svg,
+.cloud-3 svg,
+.cloud-4 svg {
+  width: 100vw;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .open-invitation {
+    padding: 0 20px;
+  }
+  .card-name {
+    width: 100%;
+  }
+  .btn-open-invitation {
+    left: 49%;
+    transform: translate(-49%, -50%);
+  }
+  .wayang {
+    transform: translateY(110px);
+    width: 200px;
+    bottom: -30px;
+    animation: wayang-mobile-show 2s forwards,
+      wayang-mobile-rotate 5s 2s infinite;
+  }
+  .gunungan {
+    bottom: -90px;
+    left: 0px;
+    width: 100px;
+    animation: gunungan-mobile-show 5s forwards,
+      gunungan-mobile-rotate 5s 5s infinite;
+  }
+  .gunungan-2 {
+    bottom: -130px;
+    left: 100px;
+    width: 100px;
+    animation: gunungan-2-mobile-show 5s forwards,
+      gunungan-2-mobile-rotate 5s 5s infinite;
+  }
+  .cloud,
+  .cloud-2,
+  .cloud-3,
+  .cloud-4 {
+    transform: translateY(30px);
+  }
+  .cloud svg,
+  .cloud-2 svg,
+  .cloud-3 svg,
+  .cloud-4 svg {
+    width: 100vw;
+    height: 100vh;
+  }
+  .cloud-4 {
+    transform: translateY(50px);
+  }
+}
+@media screen and (max-width: 450px) {
+  .gunungan {
+    bottom: -130px;
+    left: 0px;
+  }
+  .gunungan-2 {
+    bottom: -170px;
+    left: 70px;
+  }
+}
+@media screen and (max-height: 650px){
+    .vector{
+        display:none;
+    }
+}
